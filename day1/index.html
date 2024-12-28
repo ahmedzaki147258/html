@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Q2: basic HTML configuration -->
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/mysql.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="“Hello, world">
+    <meta name="author" content="A7med zaki">
+    <meta name="description" content="I hate HTML and CSS">
+    <title>Hello, world</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Q1: What is HTML? 
+    HTML (HyperText Markup Language) is the standard markup language for creating and designing Web pages. -->
+
+    <!-- Q3: Styling your text: using tags {bold , underline , delete text ,italic, mark} -->
+    <h2>-Styling your text:</h2>
+    <span><strong>bold paragraph</strong></span>
+    <span><u>underline paragraph</u></span>
+    <span><del>delete text paragraph</del></span>
+    <span><em>italic paragraph</em></span> 
+    <span><mark>mark paragraph</mark></span>
+    <hr/>
+
+    <!-- Q4: Give me the difference between {[b, strong], [i, em], [s,del], [s,ins]}?
+    b: visual bold text
+    strong: is semantically meaningful for screen readers and accessibility
+    i: visual italic text
+    em: indicates emphasized text and appears italic by default
+    s: visual strikethrough text (not semantic, old text)
+    del: indicates deleted text and appears strikethrough by default
+    ins: visual insertion text -->
+
+    <!-- Q5, Q6: Making a paragraph with title “this is paragraph”, Use break and line -->
+    <h2>-this is paragraph:</h2>
+    <p>Lorem ipsum dolor, 
+        sit amet consectetur adipisicing elit. 
+        Dolore reiciendis ad perspiciatis! Ducimus inventore mollitia eius fuga, 
+        natus, saepe sint quis iure magni suscipit deleniti unde maiores sunt a cumque.
+    </p>
+    <pre>
+        Lorem ipsum dolor, 
+        sit amet consectetur adipisicing elit. 
+        Dolore reiciendis ad perspiciatis! Ducimus inventore mollitia eius fuga, 
+        natus, saepe sint quis iure magni suscipit deleniti unde maiores sunt a cumque.
+    </pre>
+    <hr/>
+
+    <!-- Q7: Making a list like this -->
+    <h2>-Making a list:</h2>
+    <ol type="I">
+        <li>List Item 1</li>
+            <ol type="a">
+                <li>Nested Item 1.1</li>
+                <li>Nested Item 1.2</li>
+            </ol>
+        <li>List Item 2</li>
+            <ol type="1">
+                <li>Nested Item 2.1</li>
+                <li>Nested Item 2.2</li>
+                    <ul type="circle">
+                        <li>Nested Item 2.2.1</li>
+                        <li>Nested Item 2.2.2</li>
+                            <ul type="square">
+                                <li>Nested Item 2.2.2.1</li>
+                                <li>Nested Item 2.2.2.2</li>
+                            </ul>
+                        <li>Nested Item 2.2.3</li>
+                    </ul>
+                <li>Nested Item 2.3</li>
+            </ol>
+        <li>List Item 3</li>
+            <ul type="disc">
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.1</li>
+            </ul>
+    </ol>
+    <hr/>
+
+    <!-- Q8: Making a table like this -->
+    <h2>-Making a table:</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2" >Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">08:00 a.m.</td>
+            <td rowspan="2">05:00 p.m.</td>
+            <td>Introduction to xml</td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>08:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td>XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>02:00 p.m.</td>
+            <td rowspan="2">XSL Transformations</td>
+        </tr>
+        <tr>
+            <td>02:00 p.m.</td>
+            <td>05:00 p.m.</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>08:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td>XSL Formating Objects</td>
+        </tr>
+    </table>
+    <hr/>
+
+    <!-- Q9: Creating links target in same page and another page -->
+    <h2>-Creating links:</h2>
+    <a href="https://laravel.com/docs/11.x" >Visit Lavavel doucmention in same page</a><br/>
+    <a href="https://laravel.com/docs/11.x" target="_blank">Visit Lavavel doucmention in new page</a>
+    <hr/>
+
+    <!-- Q10: Adding an image using url and relative path -->
+    <h2>-image using url:</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4ffk4EFytTTZRLHBYocyw2DJzSl9usMaAA&s" alt="image using url">
+    <br/><h2>image using relative path:</h2>
+    <img src="./images/mysql.png" alt="image using relative path" width="30%" height="200">
+    <hr/><br/>
+
+    <!-- Q11: Making the image into a link -->
+    <h2>-image into a link:</h2>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpkeoypWmiV8dk-xCTPSWlUJVBtNH9gg2Hg&s" target="_blank"><img src="./images/clickme.png" alt="click here"></a>
+    <hr/><br/>
+
+    <!-- Q12: Embedding a YouTube video using iframe -->
+    <h2>-Embedding a YouTube video:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VReVj1NxtZQ"></iframe>
+    <hr/><br/>
+
+    <!-- Q13: Making the video and audio tags -->
+    <h2>-video and audio tags:</h2>
+    <video width="30%" height="30%" controls> 
+        <source src="./images/video.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="./images/audio.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
