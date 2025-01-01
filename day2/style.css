@@ -1,0 +1,121 @@
+/* Exercise 5: Use a class selector to style specific form fields.  */
+.styled-input {
+  width: 98.5%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Exercise 5: Use an id selector to style the submit button. */
+#submit-button {
+  background-color: rgb(6, 98, 6);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Exercise 5: Use a descendant selector to style labels within a specific <section>. */
+section label {
+  font-weight: bold;
+  display: block;
+}
+
+/* Exercise 6: Use attribute selectors to style specific input types (e.g., [type="radio"]) */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Exercise 7: Nested Semantic Tags with CSS Properties */
+.comments-section {
+    max-width: 800px;
+    padding: 16px;
+    background-image: url('./images/background.jpg');
+    border-radius: 10px;
+}
+.comment {
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.comment-form {
+    margin-top: 30px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+}
+.comment-form textarea {
+    width: 98%;
+    min-height: 100px;
+    border-radius: 4px;
+}
+
+/* Exercise 8:  Accessible Form with Semantic Tags and CSS */
+.page-container {
+    max-width: 900px;
+    background-color: #f5f5f5;
+}
+.form-group {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+.form-label {
+    display: block;
+    font-weight: bold;
+    color: #39465b;
+}
+.form-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+/* Exercise 9: Box Model Practice */
+.rounded-box { border-radius: 8px; }
+.box-1 {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #4CAF50;
+    background-color: #81C784;
+}
+.box-2 {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    margin: 15px;
+    border: 10px groove #2196F3;
+    background-color: #64B5F6;
+}
+.box-3 { 
+    width: 150px;
+    height: 75px;
+    padding: 0;
+    margin: 30px;
+    border: 2px dashed #FF5722;
+    background-color: #FF8A65;
+}
+.box-4 {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+    border: 15px double #9C27B0;
+    background-color: #BA68C8;
+}
+.box-5 {
+    width: 95.5%;
+    height: 25%;
+    padding: 30px;
+    margin: 10px 0;
+    border: 5px solid #FFC107;
+    background-color: #FFD54F;
+}

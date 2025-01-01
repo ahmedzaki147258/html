@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        /* Exercise 3: Styling Form with CSS Properties */
+        main {
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+            border-radius: 20px;
+            width: 50%; /* Exercise 4: CSS Units */
+        }
+
+        input {
+            margin: 1rem; /* Exercise 4: CSS Units */
+            padding: 1.5em; /* Exercise 4: CSS Units */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Exercise 1: Form -->
+    <h1>Form</h1>
+    <form action="" method="POST">
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="Enter username" /><br />
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter password" /><br />
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" placeholder="Confirm password" /><br />
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter email" /><br />
+
+        <label>Choose gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female<br />
+
+        <label>Enter your date of birth:</label>
+        <input type="date" name="date_of_birth" /><br />
+
+        <label>Do you like this lab?</label>
+        <input type="radio" name="like" value="yes" checked /> Yes
+        <input type="radio" name="like" value="no" /> No<br />
+
+        <label>Rate our Session:</label>
+        <input type="range" name="rate" min="0" max="10" value="4" step="1" /><br />
+
+        <label>Choose your favorite color:</label>
+        <select name="color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select><br /><br />
+
+        <label>Feedback:</label>
+        <textarea></textarea><br />
+
+        <label>Upload Resume:</label>
+        <input type="file" name="resume" /><br />
+
+        <label>Select your fav language:</label>
+        <input type="checkbox" name="fav_language" value="python" /> Python
+        <input type="checkbox" name="fav_language" value="java" /> Java
+        <input type="checkbox" name="fav_language" value="c++" /> C++<br />
+
+        <label>Hidden Field:</label>
+        <input type="hidden" name="hidden" value="hidden text" /><br />
+
+        <input type="submit" value="Submit" />
+    </form>
+    <hr />
+    <br />
+
+    <!-- Exercise 2: Basic Form with Semantic Tags -->
+    <main>
+        <form action="" method="POST">
+            <header>
+                <h1>Registration form</h1>
+            </header>
+
+            <section>
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus />
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                </fieldset>
+
+                <fieldset>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required />
+                </fieldset>
+            </section>
+            <input type="submit" value="Register" />
+
+            <footer>
+                <a href="#">Terms and Conditions</a>
+            </footer>
+        </form>
+    </main>
+    <hr />
+
+    <!-- Exercise 5: Complex Form with CSS Selectors  -->
+    <h1>Feedback Form</h1>
+    <form method="POST">
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="styled-input" name="name" placeholder="Enter your name" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" class="styled-input" name="message" rows="4" placeholder="Write your message"></textarea>
+        </section>
+        <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <hr />
+
+    <!-- Exercise 6: Form with Advanced CSS Selectors  -->
+    <h1>Survey Form</h1>
+    <form method="POST">
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="styled-input" name="name" placeholder="Enter your name" />
+        </section>
+
+        <section class="satisfaction">
+            <p>Overall, how satisfied or dissatisfied are you with Visual Studio Code for Java development?</p>
+            <input type="radio" name="satisfaction" value="extremely_dissatisfied" /> Extremely dissatisfied <br/>
+            <input type="radio" name="satisfaction" value="moderately_dissatisfied" /> Moderately dissatisfied <br/>
+            <input type="radio" name="satisfaction" value="slightly_dissatisfied" /> Slightly dissatisfied <br/>
+            <input type="radio" name="satisfaction" value="neither_satisfied_nor_dissatisfied" /> Neither satisfied nor dissatisfied <br/>
+            <input type="radio" name="satisfaction" value="slightly_satisfied" /> Slightly satisfied <br/>
+            <input type="radio" name="satisfaction" value="moderately_satisfied" /> Moderately satisfied <br/>
+            <input type="radio" name="satisfaction" value="extremely_satisfied" /> Extremely satisfied <br/>
+        </section>
+        <button type="submit" id="submit-button">Submit</button>
+    </form><hr/><br/>
+
+    <!-- Exercise 7: Nested Semantic Tags with CSS Properties  -->
+    <section class="comments-section">        
+        <article class="comment">
+            <p style="font-weight: bold;">A7med zaki</p>
+            <p>I am excited to share that I have been accepted into the prestigious 9-month scholarship at ITI</p>
+        </article>
+        <article class="comment">
+            <p style="font-weight: bold;">M7hamed ali</p>
+            <p>Congratulate for starting a new position as Junior backend developer at xyz</p>
+        </article>
+
+        <aside class="comment-form">
+            <form method="POST">
+                <label for="comment">Write Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit" id="submit-button">Comment</button>
+            </form>
+        </aside>
+    </section><hr/><br/>
+
+    <!-- Exercise 8: Accessible Form with Semantic Tags and CSS -->
+    <main class="page-container">
+        <form>
+            <header>
+                <h2>ITI Registration Form</h2>
+                <p style="color: red;">* Indicates required question</p>
+            </header>
+
+            <fieldset class="form-group">
+                <legend>Personal Information</legend>
+
+                <section>
+                    <label for="name" class="form-label">Name <span style="color: red;">*</span></label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </section>
+
+                <section>
+                    <label for="email" class="form-label">Your Email Address <span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </section>
+
+                <section>
+                    <label for="phone" class="form-label">Your Phone <span style="color: red;">*</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                </section>
+
+                <section>
+                    <label for="city" class="form-label">GitHub Profile Link <span style="color: red;">*</span></label>
+                    <input type="url" id="city" name="gitHub" class="form-input" required>
+                </section>
+            </fieldset>
+
+            <footer>
+                <button type="submit" id="submit-button">Submit Form</button>
+            </footer>
+        </form>
+    </main><hr/><br/>
+
+    <!-- Exercise 9: Box Model Practice -->
+    <div class="rounded-box box-1">Box-1</div>
+    <div class="rounded-box box-2">Box-2</div>
+    <div class="rounded-box box-3">Box-3</div>
+    <div class="rounded-box box-4">Box-4</div>
+    <div class="rounded-box box-5">Box-5</div>
+</body>
+</html>
